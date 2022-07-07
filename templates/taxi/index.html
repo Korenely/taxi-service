@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+        <h1 class="mb-3">Hello, {{ user.username }}!</h1>
+        <h4 class="mb-3">Welcome to Best Taxi Ever!</h4>
+
+    <div class="cards">
+            <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Cars</h5>
+        <p class="card-text">{{ num_cars }}</p>
+      </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Drivers</h5>
+        <p class="card-text">{{ num_drivers }}</p>
+      </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Manufacturers</h5>
+        <p class="card-text">{{ num_manufacturers }}</p>
+      </div>
+            </div>
+    </div>
+    <p>You have visited this page
+        {{ num_visits }} time{{ num_visits|pluralize }}.
+    </p>
+
+{% endblock %}
