@@ -1,7 +1,7 @@
 # taxi-service
 Django project for managing taxi service
 
-[Taxi service project deployed to Heroku]()
+[Taxi service project deployed to Heroku](taxi-management-service.herokuapp.com)
 
 ## Installation
 Python3 must be already installed
